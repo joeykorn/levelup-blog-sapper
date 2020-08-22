@@ -1,5 +1,6 @@
 <script>
   import { goto } from "@sapper/app";
+  import Image from "svelte-image";
   import { fadeIn, fadeOut } from "../animate";
 
   function doThing() {
@@ -54,7 +55,7 @@
   <button on:click={doThing}>Send me elsewhere</button>
 
   <figure>
-    <img alt="Success Kid" src="successkid.jpg" />
+    <Image alt="Success Kid" src="successkid.jpg" />
     <figcaption>Have fun with Sapper!</figcaption>
   </figure>
 
